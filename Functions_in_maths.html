@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>buttons</title>
+<style>
+.div{border:2px solid purple;
+     background-color:aqua;
+     color:black;
+     border-radius:10px;
+     width:60%;
+     height:150px;
+     margin-left:150px;
+     margin-top:50px;
+     padding:40px;
+     }
+</style>
+</head>
+<body bgcolor="lightgreen" style="border:4px dotted purple">
+<div class="div">
+<h1> Sum of N natural numbers</h1>
+<form>
+<table>
+<tr>
+<td><label for="name">Enter Number:</label></td>
+<td><input type="text" name="text" id="sum"><br></td>
+</tr>
+<tr>
+<td><label>Result:</label></td>
+<td><input type="text" name="text" id="sumi"><br></td>
+</tr>
+<tr>
+<td colsapn="2"><button type="button" onclick="s();">sum button</button></tr>
+</table>
+</form>
+<script type="text/javascript">
+function s(){
+var su=document.getElementById('sum').value;
+su=Number(su);
+var i,s=0;
+for(i=1;i<=su;i++){
+s=s+i}
+document.getElementById('sumi').value=s;}
+</script>
+</div>
+</br>
+
+
+
+
+
+
+
+<div class="div">
+<h1> Sum of Even numbers</h1>
+<form>
+<table>
+<tr>
+<td><label for="name">Enter Number:</label></td>
+<td><input type="text" name="text" id="even"><br></td>
+</tr>
+<tr>
+<td><label>Result:</label></td>
+<td><input type="text" name="text" id="eveni"><br></td>
+</tr>
+<tr>
+<td colsapn="2"><button type="button" onclick="ev();">sum button</button></tr>
+</table>
+</form>
+<script type="text/javascript">
+function ev(){
+var evn=document.getElementById('even').value;
+evn=Number(evn);
+var i,s=0;
+for(i=1;i<=evn;i++){
+if(i%2==0){s=s+i}}
+document.getElementById('eveni').value=s;}
+</script>
+</div>
+<br>
+
+
+
+<div class="div">
+<h1> Sum of odd numbers</h1>
+<form>
+<table>
+<tr>
+<td><label for="name">Enter Number:</label></td>
+<td><input type="text" name="text" id="odd"><br></td>
+</tr>
+<tr>
+<td><label>Result:</label></td>
+<td><input type="text" name="text" id="oddi"><br></td>
+</tr>
+<tr>
+<td colsapn="2"><button type="button" onclick="oddn();">sum button</button></tr>
+</table>
+</form>
+<script type="text/javascript">
+function oddn(){
+var od=document.getElementById('odd').value;
+od=Number(od);
+var i,s=0;
+for(i=1;i<=od;i++){
+if(i%2!=0){s=s+i}}
+document.getElementById('oddi').value=s;}
+</script>
+</div>
+<br>
+
+
+
+
+
+
+
+<div class="div">
+<h1>  No of Factors of  aGiven Numbers</h1>
+<form>
+<table>
+<tr>
+<td><label for="name">Enter Number:</label></td>
+<td><input type="text" name="text" id="fac"><br></td>
+</tr>
+<tr>
+<td><label>Result:</label></td>
+<td><input type="text" name="text" id="faci"><br></td>
+</tr>
+<tr>
+<td colspan="2"><button type="button" onclick="display();">factors button</button></tr>
+</table>
+</form>
+<script type="text/javascript">
+function display(){
+var a=document.getElementById('fac').value;
+a=Number(a);
+var i,s=0;
+for(i=1;i<=a;i++)
+{if(a%i==0){s=s+1}}
+document.getElementById('faci').value=s;}
+</script>
+</div>
+<br>
+
+
+
+<div class="div">
+<h1> sum of Factors of a Given Numbers</h1>
+<form>
+<table>
+<tr>
+<td><label for="name">Enter Number:</label></td>
+<td><input type="text" name="text" id="fas"><br></td>
+</tr>
+<tr>
+<td><label>Result:</label></td>
+<td><input type="text" name="text" id="fasi"><br></td>
+</tr>
+<tr>
+<td colspan="2"><button type="button" onclick="factor();">factors button</button></tr>
+</table>
+</form>
+<script type="text/javascript">
+function factor(){
+var f=document.getElementById('fas').value;
+f=Number(f);
+var i,s=0;
+for(i=1;i<=f;i++)
+{if(f%i==0){s=s+i}}
+document.getElementById('fasi').value=s;}
+</script>
+</div>
+<br>
+
+
+
+
+
+<div class="div">
+<h1> prime check of a Given Numbers</h1>
+<form>
+<table>
+<tr>
+<td><label for="name">Enter Number:</label></td>
+<td><input type="text" name="text" id="prime"><br></td>
+</tr>
+<tr>
+<td><label>Result:</label></td>
+<td><input type="text" name="text" id="primei"><br></td>
+</tr>
+<tr>
+<td colsapn="2"><button type="button" onclick="facc();">prime button</button></tr>
+</table>
+</form>
+<script type="text/javascript">
+function facc(){
+var fc=document.getElementById('prime').value;
+fc=Number(fc);
+var i,s=0;
+for(i=1;i<=fc;i++){
+if(fc%i==0){s=s+1}}
+ if(s == 2) {
+        document.getElementById('primei').value = "Prime";
+    } else {
+        document.getElementById('primei').value = "not  prime";
+    }
+}
+</script>
+</div>
+<br>
+
+
+
+
+
+
+
+<div class="div">
+  <h1>Count of Prime Numbers of Given Number</h1>
+  <form>
+    <table>
+      <tr>
+        <td><label for="prim">Enter Number:</label></td>
+        <td><input type="text" name="text" id="prim"><br></td>
+      </tr>
+      <tr>
+        <td><label>Count of Prime Numbers:</label></td>
+        <td><input type="text" name="text" id="prims" readonly><br></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button type="button" onclick="prime();">Count Primes</button></td>
+      </tr>
+    </table>
+  </form>
+
+  <script type="text/javascript">
+    function prime() {
+      var p = document.getElementById('prim').value;
+      p = Number(p);
+      var c = 0;
+
+      // Loop through all numbers from 2 to p (since 1 is not prime)
+      for (var i = 2; i <= p; i++) {
+        var f = 0;
+        
+        // Check if i is prime
+        for (var j = 1; j <= i; j++) {
+          if (i % j === 0) {
+            f++; // Increment if i is divisible by j
+          }
+        }
+        
+        // If i is prime (only divisible by 1 and itself)
+        if (f === 2) {
+          c++; // Increment the count of prime numbers
+        }
+      }
+      
+      // Display the count of prime numbers
+      document.getElementById('prims').value = c;
+    }
+  </script>
+</div>
+
+
+
+
+
+<div class="div">
+  <h1>Sum of Prime Numbers of Given Number</h1>
+  <form>
+    <table>
+      <tr>
+        <td><label for="prim">Enter Number:</label></td>
+        <td><input type="text" name="text" id="primsu"><br></td>
+      </tr>
+      <tr>
+        <td><label>Count of Prime Numbers:</label></td>
+        <td><input type="text" name="text" id="primsum" readonly><br></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button type="button" onclick="primesums();">sum Primes</button></td>
+      </tr>
+    </table>
+  </form>
+
+  <script type="text/javascript">
+    function primesums() {
+      var pi = document.getElementById('primsu').value;
+      pi = Number(pi);
+      var c = 0;
+
+      // Loop through all numbers from 2 to p (since 1 is not prime)
+      for (var i = 2; i <= pi; i++) {
+        var f = 0;
+        
+        // Check if i is prime
+        for (var j = 1; j <= i; j++) {
+          if (i % j === 0) {
+            f++; // Increment if i is divisible by j
+          }
+        }
+        
+        // If i is prime (only divisible by 1 and itself)
+        if (f === 2) {
+          c=c+i; // Increment the count of prime numbers
+        }
+      }
+      
+      // Display the count of prime numbers
+      document.getElementById('primsum').value = c;
+    }
+  </script>
+</div>
+
+
+
+
+
+<div class="div">
+<h1> lcm of two numbers</h1>
+<form>
+<table>
+<tr>
+<td><label for="name">Enter Number:</label></td>
+<td><input type="text" name="text" id="lcm"><br></td>
+</tr>
+<tr>
+<td><label>Enter number</label></td>
+<td><input type="text" name="text" id="lcm2"><br></td>
+</tr>
+<tr>
+<td><label>Result:</label></td>
+<td><input type="text" name="text" id="lres"><br></td>
+</tr>
+<tr>
+<td colspan="2"><button type="button" onclick="lfactor();">lcm button</button></tr>
+</table>
+</form>
+<script type="text/javascript">
+function lfactor(){
+var a,b
+a=document.getElementById('lcm').value;
+b=document.getElementById('lcm2').value;
+a=Number(a);
+b=Number(b);
+for(i=1;i<=a*b;i++){
+	if(i%a==0&&i%b==0){
+	break;}}
+	document.getElementById('lres').value=i;}
+</script>
+</div>
+<br>
+
+
+
+
+<div class="div" style="height:200px;">
+<h1>Roots of a given number</h1>
+<form>
+<table>
+<tr>
+<td><label for="name">Enter Number:</label></td>
+<td><input type="text" name="text" id="rd"><br></td>
+</tr>
+<tr>
+<td><label>Enter number</label></td>
+<td><input type="text" name="text" id="rd2"><br></td>
+</tr>
+<tr>
+<td><label>Enter number</label></td>
+<td><input type="text" name="text" id="rd3"><br></td>
+</tr>
+<tr>
+<td><label>Result:</label></td>
+<td><input type="text" name="text" id="rres"><br></td>
+</tr>
+<tr>
+<td><label>Result:</label></td>
+<td><input type="text" name="text" id="rresi"><br></td>
+</tr>
+<tr>
+<td colspan="2"><button type="button" onclick="rfactor();">roots button</button></tr>
+</table>
+</form>
+<script type="text/javascript">
+function rfactor(){
+
+var a,b,c,d,e
+a=document.getElementById('rd').value;
+b=document.getElementById('rd2').value;
+c=document.getElementById('rd3').value;
+a=Number(a);
+b=Number(b);
+c=Number(c);
+var discriment=b*b-4*a*c
+d=(-b+Math.sqrt(discriment))/(2*a);
+e=(-b-Math.sqrt(discriment))/(2*a);
+document.getElementById('rres').value=(d);
+document.getElementById('rresi').value=(e);}
+</script>
+</div>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
